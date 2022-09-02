@@ -1,0 +1,32 @@
+.trabaja{
+    h2{
+        margin-inline: 10vw;
+        color: $orange;
+        font-weight: 600;
+        border-bottom: solid 0.3rem $orange;
+        padding: 1rem;
+    }
+    p{
+        margin: 1em 10vw;
+    }
+    .column{
+        margin: 5rem 10vw;
+        justify-content: space-between;
+        line-height: 5em;
+        img{
+            margin-right: 1rem;
+        }
+    }
+    input{
+        border-radius: 10rem;
+        border: none;
+        padding: 0.5rem 0.5em;
+        box-shadow: $box-shadow;
+        width: 60vw;
+    }
+    input::placeholder{
+        font-size: clamp(1.8rem, 3vw, 2rem);
+        padding-left: 1rem;
+        color: $grey-text;
+    }
+}

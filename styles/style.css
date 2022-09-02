@@ -1,0 +1,465 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Raleway, sans-serif;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 3rem);
+}
+
+/* primary header */
+* {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.logo h1 {
+  font-weight: 600;
+  margin-inline: 1rem;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 90%;
+  margin: 4rem auto;
+  border-radius: 100px;
+  padding: 0 40px;
+  height: 90px;
+  box-shadow: 0 4px 20px hsla(0deg, 0%, 0%, 0.4);
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.primary-navigation a:hover {
+  color: #61A7A3;
+}
+
+.primary-navigation {
+  position: fixed;
+  z-index: 1000;
+  inset: 0 0 0 30%;
+  flex-direction: column;
+  padding: min(20vh, 10rem) 2rem;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 250ms ease-out;
+}
+
+.primary-navigation[data-visible=true] {
+  transform: translateX(0%);
+}
+
+.mobile-nav-toggle {
+  display: block;
+  position: absolute;
+  z-index: 9999;
+  background-color: transparent;
+  background-image: url(/img/menu-hamb.svg);
+  background-repeat: no-repeat;
+  border: 0;
+  width: 2rem;
+  aspect-ratio: 1;
+  top: 3.7em;
+  right: 5rem;
+  cursor: pointer;
+}
+
+.mobile-nav-toggle[aria-expanded=true] {
+  background-image: url(/img/menu-closed.svg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: clamp(1.2rem, 5vw + 1rem, 2rem);
+  font-weight: 400;
+  color: #9e9e9e;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+li, button, label, input, p, a {
+  font-size: clamp(1.2rem, 5vw + 1rem, 2rem);
+}
+
+h2 {
+  font-size: clamp(4rem, 5vw, 8rem);
+}
+
+h3 {
+  font-size: clamp(2rem, 5vw, 6rem);
+}
+
+h4 {
+  font-size: clamp(1.2rem, 5vw + 1rem, 1.8rem);
+}
+
+ul {
+  list-style: none;
+}
+
+.links {
+  color: #427370;
+  font-size: 2rem;
+}
+
+a {
+  font-size: clamp(1.2rem, 5vw + 1rem, 1.8rem);
+  color: #427370;
+  font-weight: 400;
+}
+
+a:hover {
+  color: #61A7A3;
+}
+
+.btn {
+  border-radius: 10rem;
+  background-color: #61A7A3;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: solid #61A7A3 0.2rem;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #61A7A3;
+  border: solid #61A7A3 0.2rem;
+}
+
+.auto {
+  width: 90%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-outline {
+  border: solid #427370 0.5rem;
+  background-color: white;
+  color: #427370;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  border-radius: 10rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  border: solid #427370 0.5rem;
+  background-color: #427370;
+}
+.btn-outline:hover a {
+  color: white;
+}
+
+.blue {
+  color: #61A7A3;
+  font-weight: 500;
+}
+
+.extra-bold {
+  font-weight: 700;
+}
+
+button a {
+  text-decoration: none;
+}
+
+.homepage {
+  /*action*/
+}
+.homepage h2 {
+  color: #FFB444;
+  width: 70vw;
+  margin-inline: 10vw;
+}
+.homepage .extra-bold {
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+.homepage input {
+  border-radius: 10rem;
+  border: none;
+  padding: 0.5rem 0.5em;
+  box-shadow: 0rem 0.4rem 2rem hsla(0deg, 0%, 0%, 0.2);
+  margin: 1rem 10vw;
+  width: 60vw;
+}
+.homepage input::-moz-placeholder {
+  font-size: clamp(1.8rem, 3vw, 2rem);
+  padding-left: 1rem;
+  color: #9e9e9e;
+}
+.homepage input:-ms-input-placeholder {
+  font-size: clamp(1.8rem, 3vw, 2rem);
+  padding-left: 1rem;
+  color: #9e9e9e;
+}
+.homepage input::placeholder {
+  font-size: clamp(1.8rem, 3vw, 2rem);
+  padding-left: 1rem;
+  color: #9e9e9e;
+}
+.homepage button {
+  border-radius: 10rem;
+  border: solid 0.3rem #61A7A3;
+  background-color: #61A7A3;
+  padding: 0.5rem 2em;
+  font-size: clamp(1.8rem, 3vw, 2rem);
+  margin: 2rem 10vw;
+  cursor: pointer;
+}
+.homepage button a {
+  color: white;
+  font-weight: 500;
+}
+.homepage button:hover {
+  background-color: white;
+  color: #61A7A3;
+}
+.homepage button:hover a {
+  color: #61A7A3;
+}
+
+.boxes {
+  margin-block: 2em;
+}
+.boxes .box {
+  margin: 5em 10vw;
+}
+.boxes .box h3 {
+  color: #FFB444;
+  margin-block: 1rem 2rem;
+}
+.boxes .box p {
+  font-size: clamp(1.2rem, 5vw + 1rem, 2rem);
+}
+
+.sobre-nosotros {
+  margin-inline: 10vw;
+}
+.sobre-nosotros h2 {
+  color: #61A7A3;
+  font-weight: 600;
+}
+.sobre-nosotros p {
+  margin-top: 1rem;
+  border-left: solid 0.2rem #61A7A3;
+  padding-inline: 1rem;
+  line-height: 3rem;
+}
+.sobre-nosotros button {
+  border-radius: 10rem;
+  border: solid 0.3rem #61A7A3;
+  background-color: #61A7A3;
+  padding: 0.5rem 2em;
+  font-size: clamp(1.8rem, 3vw, 2rem);
+  margin-block: 4rem 2em;
+  cursor: pointer;
+}
+.sobre-nosotros button a {
+  color: white;
+  font-weight: 500;
+}
+.sobre-nosotros button:hover {
+  background-color: white;
+  color: #61A7A3;
+}
+.sobre-nosotros button:hover a {
+  color: #61A7A3;
+}
+
+.bkg-shadow {
+  box-shadow: 0rem 0.4rem 2rem hsla(0deg, 0%, 0%, 0.2);
+  padding: 3rem 10vw;
+}
+.bkg-shadow h2 {
+  color: #61A7A3;
+  font-weight: 600;
+}
+.bkg-shadow p {
+  margin-top: 1rem;
+  border-left: solid 0.2rem #61A7A3;
+  padding-inline: 1rem;
+  line-height: 3rem;
+}
+
+.trabaja h2 {
+  margin-inline: 10vw;
+  color: #FFB444;
+  font-weight: 600;
+  border-bottom: solid 0.3rem #FFB444;
+  padding: 1rem;
+}
+.trabaja p {
+  margin: 1em 10vw;
+}
+.trabaja .column {
+  margin: 5rem 10vw;
+  justify-content: space-between;
+  line-height: 5em;
+}
+.trabaja .column img {
+  margin-right: 1rem;
+}
+.trabaja input {
+  border-radius: 10rem;
+  border: none;
+  padding: 0.5rem 0.5em;
+  box-shadow: 0rem 0.4rem 2rem hsla(0deg, 0%, 0%, 0.2);
+  width: 60vw;
+}
+.trabaja input::-moz-placeholder {
+  font-size: clamp(1.8rem, 3vw, 2rem);
+  padding-left: 1rem;
+  color: #9e9e9e;
+}
+.trabaja input:-ms-input-placeholder {
+  font-size: clamp(1.8rem, 3vw, 2rem);
+  padding-left: 1rem;
+  color: #9e9e9e;
+}
+.trabaja input::placeholder {
+  font-size: clamp(1.8rem, 3vw, 2rem);
+  padding-left: 1rem;
+  color: #9e9e9e;
+}
+
+.contacto {
+  width: 70%;
+  margin: 9rem auto;
+}
+.contacto .column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contacto .form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contacto .btn-outline {
+  width: 40%;
+  margin-top: 3rem;
+}
+
+/*Costume field*/
+::before, ::after {
+  box-sizing: border-box;
+}
+
+.costume-field {
+  position: relative;
+  font-size: 1.4rem;
+  margin-bottom: 4.5rem;
+}
+
+.costume-field input {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  width: 100%;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.costume-field .placeholder {
+  position: absolute;
+  left: 4rem;
+  top: calc(50% + 0.2rem);
+  transform: translate(-50%);
+  color: hsla(32deg, 100%, 50%, 0.6);
+  font-weight: 500;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.costume-field input:valid + .placeholder,
+.costume-field input:focus + .placeholder {
+  top: 0.5rem;
+  left: 4rem;
+  font-size: 1.2rem;
+  color: #FFB444;
+}
+
+.costume-field.two input {
+  border-radius: 0;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  background: linear-gradient(90deg, #FF8A00, #FF8A00) center bottom/0% 0.2rem no-repeat, linear-gradient(90deg, hsla(32deg, 100%, 50%, 0.7), hsla(32deg, 100%, 50%, 0.7)) left bottom/100% 0.2rem no-repeat, linear-gradient(90deg, #fafafa, #fafafa) left bottom/100% no-repeat;
+  transition: background-size 0.3s ease;
+}
+
+.costume-field.two input:valid, .costume-field.two input:focus {
+  background-size: 100% 0.2rem, 100% 0.2rem, 100%;
+}/*# sourceMappingURL=style.css.map */

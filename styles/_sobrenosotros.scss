@@ -1,0 +1,15 @@
+
+.bkg-shadow{
+    box-shadow: $box-shadow;
+    padding: 3rem 10vw;
+    h2{
+        color: $blue;
+        font-weight: 600;
+    }
+    p{
+        margin-top: 1rem;
+        border-left: solid 0.2rem $blue;
+        padding-inline: 1rem;
+        line-height: 3rem;
+    }
+}

@@ -1,0 +1,26 @@
+$header1: 5rem;
+$header2: clamp(4rem, 5vw, 8rem);
+$header3: clamp(2rem, 5vw, 6rem);
+$header4: clamp(1.2rem, 5vw + 1rem, 1.8rem);
+$text: clamp(1.2rem, 5vw + 1rem, 2rem);
+$blue: #61A7A3;
+$orange: #FFB444;
+$grey-text: #9e9e9e;
+$box-shadow: 0rem 0.4rem 2rem hsl(0, 0, 0, 20%);
+$line-height: 3.5rem;
+
+
+
+@mixin flex($justify, $align, $direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@import "nav";
+@import "global";
+@import "homepage";
+@import "sobrenosotros";
+@import "trabaja";
+@import "contacto";
